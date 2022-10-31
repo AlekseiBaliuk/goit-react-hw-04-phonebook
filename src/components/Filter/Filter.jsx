@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FilterTitle, FilterContainer, FilterInput } from './Filter.styled';
 
-const Filter = ({ value, onChange }) => (
+export const Filter = ({ value, onChange }) => (
   <FilterContainer>
     <label>
       <FilterTitle>Find contacts by name</FilterTitle>
@@ -15,5 +15,3 @@ Filter.propTypes = {
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
 };
-
-export default Filter;
